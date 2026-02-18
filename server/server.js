@@ -47,3 +47,7 @@ app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
   console.log(`📍 http://localhost:${PORT}`);
 });
+
+
+// Add this line with other route imports
+app.use('/api/cv', require('./routes/cv'));
